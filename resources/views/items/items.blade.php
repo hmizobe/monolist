@@ -15,8 +15,8 @@
                             @endif
                             <div class="buttons text-center">
                                 @if (Auth::check())
-                                   @include('items.want_button', ['item' => $item])
-                                   @include('items.have_button', ['item' => $item])
+                                        @include('items.want_button', ['item' => $item])
+                                        @include('items.have_button', ['item' => $item])
                                 @endif
                             </div>                        
                         </div>
