@@ -4,6 +4,7 @@
 
 
 @if ($items)
+<h1>Haveランキング！</h1>
     <div class="row">
         @foreach ($items as $key => $item)
             <div class="item">
@@ -14,7 +15,7 @@
                         </div>
                         <div class="panel-body">
                             @if ($item->id)
-                                <p class="item-title"><a href="#">{{ $item->name }}</a></p>
+                                <p class="item-title"><a href="{{ route('items.show', $item->id) }}">{{ $item->name }}</a></p>
                             @else
                                 <p class="item-title">{{ $item->name }}</p>
                             @endif
